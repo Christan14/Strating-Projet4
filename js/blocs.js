@@ -1,4 +1,4 @@
-// Blocs.js Minified
+
 function setUpSpecialNavs() {
     $(".navbar-toggle").click(function(t) {
         var e = $(this).closest("nav"),
@@ -8,7 +8,7 @@ function setUpSpecialNavs() {
             if (t.stopPropagation(), $(this).hasClass("selected-nav")) $(".blocsapp-special-menu blocsnav").removeClass("open"), $(".selected-nav").removeClass("selected-nav"), setTimeout(function() {
                 $(".blocsapp-special-menu").remove(), $("body").removeClass("lock-scroll"), $(".selected-nav").removeClass("selected-nav")
             }, 300);
-            else {
+            else {// Blocs.js Minified
                 $(this).addClass("selected-nav");
                 var o = e.attr("class").replace("navbar", "").replace("row", ""),
                     l = i.parent().attr("class").replace("navbar-collapse", "").replace("collapse", "");
