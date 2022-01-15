@@ -2011,8 +2011,13 @@ pre code {
 }
 
 .row {
+    display: flex;
     margin-right: -15px;
     margin-left: -15px
+}
+
+.rab {
+    flex-wrap: wrap;
 }
 
 .col-lg-1,
