@@ -454,7 +454,7 @@ a:hover {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'3e3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/3e3c/svg3e);
 }
 
 .navbar-toggler-icon {
@@ -1223,13 +1223,13 @@ h4 {
         text-align: center;
     }
 
-    #rtwp {
-        flex-wrap: wrap;
+    .rtwp {
+        /*flex-wrap: wrap;*/
         padding: 0 6rem;
     }
 
     .tag {
-        padding: 0 7rem;
+        padding: 0.5rem 1.5rem;
     }
 
     .navbar-collapse {
@@ -1296,7 +1296,7 @@ h4 {
          flex-wrap: wrap;
         /*margin-left: -15px;*
         /*margin-right: -15px;*/
-        padding: 0.5rem 1.5rem;
+        /*padding: 0.5rem 1.5rem;*/
         align-items:center;
         justify-content: space-between;
     }
@@ -1336,6 +1336,10 @@ h4 {
     .collapse.in {
         display: block;
     }
+    .collapse.in::before {
+        display:block;
+        content: "";
+    }
 
     .nav>li {
         position: relative;
@@ -1352,15 +1356,6 @@ h4 {
         padding-top: 10px;
         padding-bottom: 10px;
         line-height: 20px;
-    }
-
-    .btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
-        clear: both;
-    }
-    
-    .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
-        display: table;
-        content: " ";
     }
 
     button {
@@ -1395,6 +1390,7 @@ h4 {
         margin: 0;
         font: inherit;
         color: inherit;
+    }
    
 
 }
